@@ -667,9 +667,9 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin-left: 10px;
-    margin-right: 5px;
   }
 }
+
 .projects__image {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   width: 95%;
