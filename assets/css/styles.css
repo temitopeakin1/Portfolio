@@ -498,8 +498,15 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 30px;
-  margin-bottom: 100px;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .skills__container .resume__col--2 {
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+  }
 }
 
 .home__social-icon {
@@ -565,7 +572,7 @@ img {
     margin-top: 1em;
   }
   .about {
-    margin-top: 10em;
+    margin-top: 4.5em;
   }
 }
 
@@ -598,7 +605,6 @@ img {
 
 /* ===== SKILLS =====*/
 
-
 @media only screen and (min-width: 240px) and (max-width: 480px) {
   #skills {
     margin-top: 2em;
@@ -608,29 +614,24 @@ img {
     margin-top: 2em;
     margin-right: 40px;
     margin-left: 1px;
-
-
   }
 }
-  
-
-.skills__container {
-  row-gap: 2rem;
+  .skills__container {
+    row-gap: 2rem;
 }
-
-.stack {
-  display: grid;
-  grid-template-columns: 100px 100px 100px 100px;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  .stack {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
 
 @media only screen and (min-width: 240px) and (max-width: 480px)  {
   .stack {
     display: grid;
     grid-template-columns: 50px 50px 50px;
-    grid-column-gap: 50px;
-    grid-row-gap: 40px;
+    grid-column-gap: 45px;
+    grid-row-gap: 30px;
     align-content: center;
     justify-content: center;
   }
@@ -658,14 +659,15 @@ img {
   display: grid;
   grid-template-columns: 500px 500px;
   grid-gap: 3rem 3rem;
-  margin-top: 30px;
+  margin-top: -10px;
 }
 
 @media only screen and (max-width: 767px){
   .projects {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
   }
 }
 .projects__image {
@@ -745,17 +747,25 @@ img {
 }
 
 .blog .subtitle {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .blog .subtitle i {
   color: var(--first-color);
 }
 
+.blog-content p{
+  font-size: 15px;
+}
 
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .blog .subtitle, .blog-content p {
+    text-align: center;
+    font-size: 15px;
+  }
+}
 
 /* ===== CONTACT =====*/
-
 
 .contact .title {
   position: relative;
