@@ -152,22 +152,24 @@ a {
 }
 
 img {
-  max-width: 100%;
   height: auto;
   display: block;
 }
 
 .home__img img {
-  width: 60%;
+  max-width: 300px;
   border-radius: 20%;
-  margin-top: -15rem;
-  margin-left: 90px;
+  margin-bottom: 4em;
+  margin-left: 30px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 240px) and (max-width: 480px) {
 .home__img img {
-    width: 100%;
-    margin-left: -10px;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7em;
   }
 }
 
@@ -333,12 +335,17 @@ img {
 
 .nav__toggle {
   color: var(--second-color);
-  font-size: 4.0rem;
+  font-size: 3.0rem;
   cursor: pointer;
   transition: .5s ease-out;
   position: absolute;
   top: calc( 100% -25px);
   right: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__toggle{
+  overflow: hidden;
 }
 
 .nav__toggle.rotate{
@@ -445,9 +452,14 @@ img {
     margin-top: 40px;
     font-size: 30px;
   }
-  .home__data a{
-    font-size: 20px;
-  }
+  .home__data p {
+    font-size: 15px;
+    padding: 5px;
+ }
+ .home__data a {
+   margin-top: 4px;
+ }
+  
 }
 
 .home__social .scroll-down {
@@ -459,9 +471,10 @@ img {
   color: var(--first-color-ball);
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .home__social .scroll-down {
     justify-content: center;
+    overflow: hidden;
   }
 }
 
@@ -551,12 +564,14 @@ img {
 
 /* ===== ABOUT =====*/
 
+
+
 @media screen and (max-width: 767px) {
   .about__container {
-    margin-top: 10px;
+    margin-top: 1em;
   }
-  #about {
-    margin-top: 100px;
+  .about {
+    margin-top: 10em;
   }
 }
 
@@ -564,9 +579,15 @@ img {
   row-gap: 2rem;
   text-align: center;
 }
-
 .about__container .about__img img {
   width: 500px;
+}
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+  .about__container .about__img img {
+    max-width: 100%; /* responsive image */
+    height: auto;
+  }
 }
 
 .about__subtitle {
@@ -583,6 +604,22 @@ img {
 
 /* ===== SKILLS =====*/
 
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+  #skills {
+    margin-top: 2em;
+    overflow-x: hidden;
+  }
+  .stack {
+    margin-top: 2em;
+    margin-right: 40px;
+    margin-left: 1px;
+
+
+  }
+}
+  
+
 .skills__container {
   row-gap: 2rem;
 }
@@ -594,7 +631,7 @@ img {
   grid-row-gap: 20px;
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (min-width: 240px) and (max-width: 480px)  {
   .stack {
     display: grid;
     grid-template-columns: 50px 50px 50px;
@@ -605,12 +642,11 @@ img {
   }
 
   #skills .button {
-    font-family: var(--body-font);
-    position: absolute;
-    margin-bottom: -10rem;
-    left: 50%;
+   
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
   }
  
 }
@@ -726,6 +762,7 @@ img {
 
 /* ===== CONTACT =====*/
 
+
 .contact .title {
   position: relative;
   font-size: var(--h2-font-size);
@@ -739,7 +776,6 @@ img {
   font-family: 'Bubblegum Sans', cursive;
 }
 
-  
 .contact .title::after {
   position: absolute;
   content: "";
@@ -757,16 +793,26 @@ img {
   flex-wrap: nowrap;
   margin-top: 20px;
 }
+
+
+.contact-content .right {
+  margin-left: auto;
+}
+
  @media screen and (max-width: 767px) {
  .contact-content {
    flex-direction: column;
    margin-left: 1rem;
  }
+
+ .contact-content .right {
+   margin-top: 5em;
+ }
 }
 
-.contact .contact-content .column {
-  width: calc(50% - 30px);
-}
+/* .contact .contact-content {
+  width: calc(50% - 20px);
+} */
 
 .contact .contact-content .text {
   font-size: 20px;
@@ -775,8 +821,16 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .contact .contact-content .text {
-    font-size: 2rem;
+   .contact-content .left .text {
+    text-align: start;
+  }
+  .contact-content .right .text {
+    text-align: start; /* For Edge */
+    text-align-last: justify;
+
+  }
+  .contact-content .left .sub-title{
+    align-items: flex-start;
   }
 }
   
@@ -796,7 +850,7 @@ img {
 
 .contact .contact-content .row i {
   font-size: 25px;
-  color: var(--first-color);
+  color: var(--second-color);
 }
 
 .contact .contact-content .info .sub-title a:hover {
@@ -943,10 +997,6 @@ img {
   .home__social-icon {
     margin-bottom: 2.8125rem;
     margin-right: var(--mb-4);
-  }
-  .home__img {
-    width: 457px;
-    bottom: 13%;
   }
 
   .about__container,
