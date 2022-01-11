@@ -343,11 +343,6 @@ img {
   right: 15px;
 }
 
-@media screen and (max-width: 768px) {
-  .nav__toggle{
-  overflow: hidden;
-}
-
 .nav__toggle.rotate{
   transform: rotate(-720deg);
 }
@@ -471,10 +466,9 @@ img {
   color: var(--first-color-ball);
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 500px) {
   .home__social .scroll-down {
     justify-content: center;
-    overflow: hidden;
   }
 }
 
