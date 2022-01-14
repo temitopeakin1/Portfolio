@@ -124,13 +124,13 @@ sr.reveal('.contact__input',{interval: 200});
 
 // typing text animation script
 var typed = new Typed(".type", {
-	strings: ["A FrontEnd Software Engineer", "An IT Systems Engineer","A Mobile App Developer", "An IT Consultant", "A Seasoned Tutor"],
+	strings: ["A FrontEnd Software Engineer", "An IT Systems Engineer","A Mobile App Developer", "An IT Consultant", "A Technical Writer"],
 	typeSpeed: 100,
 	backSpeed: 60,
 	loop: true
 });
 
-
+// Begin: Theme Toggle
 
 const themeToggle = document.getElementById('theme-toggle')
 const darkTheme = 'dark-theme'
@@ -154,6 +154,10 @@ themeToggle.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 });
 
+// End: Theme Toggle
+
+// Begin :Whatsapp Link
+
 (function () {
         var options = {
             whatsapp: "+2348112785465", // WhatsApp number
@@ -164,4 +168,46 @@ themeToggle.addEventListener('click', () => {
         var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
         s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
         var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
+})();
+    
+//End: Whatsapp Link
+
+    // Begin: footer time
+    setInterval(showTime, 1000);
+    function showTime() {
+        let time = new Date();
+        let hour = time.getHours();
+        let min = time.getMinutes();
+        let sec = time.getSeconds();
+        am_pm = "AM";
+
+        if (hour > 12) {
+            hour -= 12;
+            am_pm = "PM";
+        }
+        if (hour == 0) {
+            hr = 12;
+            am_pm = "AM";
+        }
+
+        hour = hour < 10 ? "0" + hour : hour;
+        min = min < 10 ? "0" + min : min;
+        sec = sec < 10 ? "0" + sec : sec;
+
+        let currentTime = hour + ":" 
+            + min + ":" + sec + am_pm;
+
+        document.getElementById("clock")
+            .innerHTML = currentTime;
+    }
+
+showTime();
+//End: footer time
+
+const btnScrollToTop = document.querySelector('.btnScrollToTop');
+
+btnScrollToTop.addEventListener("click", function() {
+ 
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+ 
+})

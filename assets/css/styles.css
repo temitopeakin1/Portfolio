@@ -75,6 +75,14 @@ body.dark-theme {
   transition: 0.3s;
 }
 
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .change-theme i {
+    font-size: 20px;
+    margin-left: 20px;
+    padding-bottom: 50px;
+  }
+}
+
 .change-theme i:hover {
   color: black;
   transition: 0.3s;
@@ -498,6 +506,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -100px;
   margin-left: auto;
 }
 
@@ -642,6 +651,7 @@ img {
     transform: translate(-50%, -50%);
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
   }
  
 }
@@ -824,15 +834,22 @@ img {
   margin-bottom: 7px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 240px) and (max-width: 480px) {
    .contact-content .left .text {
     text-align: start;
   }
   .contact-content .right .text {
     text-align: start; /* For Edge */
     text-align-last: justify;
-
-  }
+}
+.contact-content .right {
+  display: block;
+  align-content: center;
+  justify-items: center;
+  margin-left: -18px;
+  margin-right: 9px;
+  overflow: hidden;
+}
   .contact-content .left .sub-title{
     align-items: flex-start;
   }
@@ -915,6 +932,29 @@ img {
   border: none;
 }
 
+.btnScrollToTop {
+  background-color: hsl(220, 29%, 10%);
+  border-radius: 100%;
+  position: relative;
+  top: -4rem;
+  left: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+  transform: translateX(-50%);
+}
+
+
+.btnScrollToTop i {
+  display: block;
+  color:  #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+  animation-name: showsUp;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+
 /* ===== FOOTER =====*/
 .footer {
   background-color: hsl(220, 29%, 10%);
@@ -923,11 +963,11 @@ img {
   font-family: 'Irish Grover', cursive;;
   padding: 2rem 0;
   margin-top: 50px;
-;
 }
 .footer__title {
   font-size: 1.0rem;
-  margin-bottom: var(--mb-1);
+  margin-bottom: var(--mb-2);
+  margin-top: -60px;
 }
 .footer__social {
   margin-bottom: var(--mb-1);
@@ -1035,6 +1075,22 @@ img {
   }
 }
 
+/* Animations */
+
+@keyframes showsUp {
+  0% {
+      opacity: 0;
+  }
+
+  50% {
+      opacity: 1;
+  }
+
+  100% {
+      opacity: 0;
+      transform: translateY(-1rem);
+  }
+}
 
 
 
