@@ -181,6 +181,17 @@ img {
   }
 }
 
+/* @media only screen and (min-device-width: 800px) and (max-device-width: 1280px) {
+.home__img img {
+    width: 400px;
+    display: block;
+    margin-left: -40px;
+    margin-right: 200px;
+    margin-top: 100px;
+  }
+} */
+
+
 /*===== CLASS CSS ===== */
 
 .section-title {
@@ -201,7 +212,7 @@ img {
   left: 0;
   right: 0;
   margin: auto;
-  top: 2.5rem;
+  top: 3.0rem;
   background-color: var(--first-color);
 }
 
@@ -563,8 +574,7 @@ img {
   color: #fff;
   padding: 0.75rem 2.5rem;
   font-weight: var(--font-semi);
-  border-radius: 0.5rem;
-  margin-top: 1.5rem;
+  border-radius: 1.5rem;
 }
 
 .button:hover {
@@ -713,12 +723,15 @@ img {
 }
 
 .projects__link::after {
-  content: '';
   position: absolute;
-  bottom: 0;
+  content: "";
+  width: 60px;
+  height: 0.1rem;
   left: 0;
-  height: 2.3px;
-  width: 100%;
+  right: 0;
+  margin-left: 50px;
+  top: 3.0rem;
+  background-color: var(--first-color);
   background-color: var(--first-color);
   opacity: 0;
   transition: opacity .2s ease-in-out;
@@ -766,6 +779,17 @@ img {
 
 .blog-content p{
   font-size: 15px;
+}
+
+.blog .section-title::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 0.1rem;
+  left: 0;
+  right: 0;
+  top: 3.0rem;
+  background-color: var(--first-color);
 }
 
 @media screen and (min-width: 240px) and (max-width: 480px) {
@@ -927,7 +951,7 @@ img {
   margin-bottom: 30px;
   font-size: 20px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 1.5rem;
   transition: all 0.3s ease;
   border: none;
 }
