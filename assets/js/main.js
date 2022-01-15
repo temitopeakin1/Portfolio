@@ -28,27 +28,6 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
-// const π=(el)=>{
-// 	return document.querySelector(el);
-//  }
- 
-//  let menuToggler=π(".menu-toggler");
-//  const togglerLines=document.querySelectorAll(".toggler-line");
-//  const togglerLinesTransitions=["rot45deg","_width","rot-45deg"];
-//  let navBar=π(".bar");
- 
-//  menuToggler.addEventListener('click',()=>{
-// 	menuToggler.classList.toggle('rotate');
-	
-// 	togglerLines.forEach(line=>{
-// 	   togglerLinesTransitions.forEach(trans=>{
-// 		  line.classList.toggle(trans);
-// 	   })
-// 	})
-	
-// 	navBar.classList.toggle('display')
-//  })
-
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
@@ -59,67 +38,49 @@ const sr = ScrollReveal({
 
 /*SCROLL HOME*/
 sr.reveal('.home__title',{}); 
-sr.reveal('.button',{delay: 400}); 
-sr.reveal('.home__img',{delay: 600});
-sr.reveal('.home__data p',{delay: 300});
+sr.reveal('.button',{delay: 100}); 
+sr.reveal('.home__img',{delay: 100});
+sr.reveal('.home__data p',{delay: 100});
 sr.reveal('.home__social-icon',{ interval: 200}); 
 
 /*SCROLL ABOUT*/
 sr.reveal('.about__img',{}); 
-sr.reveal('.about__subtitle',{delay: 400}); 
-sr.reveal('.about__text',{delay: 400}); 
+sr.reveal('.about__subtitle',{delay: 100}); 
+sr.reveal('.first__text',{ delay: 100 }); 
+sr.reveal('.second__text',{ delay: 100 });
 
 /*SCROLL SKILLS*/
-sr.reveal('.skills__subtitle',{}); 
-sr.reveal('.skills__text',{delay: 200}); 
-sr.reveal('.skills__data',{interval: 200}); 
-sr.reveal('.skills__img',{delay: 600});
+sr.reveal('.skills__title',{}); 
+sr.reveal('.stack',{delay: 100}); 
+sr.reveal('.skills__data',{interval: 100}); 
+sr.reveal('.skills__img',{delay: 100});
 
-/*SCROLL WORK*/
-sr.reveal('.work__img',{interval: 200}); 
+/*SCROLL PROJECTS*/
+sr.reveal('.projects',{});
+sr.reveal('.projects__image', { interval: 200 }); 
 
 /*SCROLL CONTACT*/
-sr.reveal('.contact__input',{interval: 200}); 
+sr.reveal('.contact-content', { interval: 200 }); 
+sr.reveal('.left', { interval: 200 });
+sr.reveal('.right', { interval: 300 });
 
+sr.reveal('.contact-content', { interval: 200 });
 
+ScrollReveal().reveal('#contact .left', {
+    origin: 'left',
+    delay: 100,
+    duration: 300,
+    reset: true,
+    distance: '150px',
+});
 
-// const cover = document.querySelector('.toggle-container input');
-
-// document.addEventListener('DOMContentLoaded', () => {
-// 	let darkMode = false;
-// 	const toggle = document.getElementById('toggle');
-// 	console.log(localStorage.getItem('data-theme'));
-// 	console.log(localStorage.getItem('checked'));
-	
-
-	//preference from localStorage should overwrite
-// 	if (localStorage.getItem('data-theme') === 'dark') {
-// 		darkMode = true;
-// 		toggle.checked = true;
-// 	} else if (localStorage.getItem('data-theme') === 'light') {
-// 		darkMode = false;
-// 		toggle.checked = false;
-// 	}
-
-// 	if (darkMode) {
-// 		document.body.setAttribute('data-theme', 'dark');
-// 	}
-
-// 	cover.addEventListener('change', (e) => {
-// 		if (e.target.checked) {
-// 			document.body.setAttribute('data-theme', 'dark');
-// 			localStorage.setItem('data-theme', 'dark');
-// 			toggle.checked = true;
-// 			localStorage.setItem('checked', 'checked');
-// 		} else {
-// 			document.body.setAttribute('data-theme', 'light');
-// 			localStorage.setItem('data-theme', 'light');
-// 			toggle.checked = false;
-// 			localStorage.setItem('checked', 'unchecked');
-// 		}
-// 	});
-// });
-	
+ScrollReveal().reveal('#contact .right', {
+    origin: 'right',
+    delay: 100,
+    duration: 500,
+    reset: true,
+    distance: '150px',
+});
 
 
 // typing text animation script
