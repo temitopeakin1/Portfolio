@@ -38,49 +38,32 @@ const sr = ScrollReveal({
 
 /*SCROLL HOME*/
 sr.reveal('.home__title',{}); 
-sr.reveal('.button',{delay: 100}); 
-sr.reveal('.home__img',{delay: 100});
-sr.reveal('.home__data p',{delay: 100});
-sr.reveal('.home__social-icon',{ interval: 200}); 
+sr.reveal('.button',{}); 
+sr.reveal('.home__img',{});
+sr.reveal('.home__data p',{});
+sr.reveal('.home__social-icon',{}); 
 
 /*SCROLL ABOUT*/
 sr.reveal('.about__img',{}); 
-sr.reveal('.about__subtitle',{delay: 100}); 
-sr.reveal('.first__text',{ delay: 100 }); 
-sr.reveal('.second__text',{ delay: 100 });
+sr.reveal('.about__subtitle',{}); 
+sr.reveal('.first__text',{}); 
+sr.reveal('.second__text',{});
 
 /*SCROLL SKILLS*/
 sr.reveal('.skills__title',{}); 
-sr.reveal('.stack',{delay: 100}); 
-sr.reveal('.skills__data',{interval: 100}); 
-sr.reveal('.skills__img',{delay: 100});
+sr.reveal('.stack',{}); 
+sr.reveal('.skills__data',{}); 
+sr.reveal('.skills__img',{});
 
 /*SCROLL PROJECTS*/
 sr.reveal('.projects',{});
-sr.reveal('.projects__image', { interval: 200 }); 
+sr.reveal('.projects__image', {}); 
 
 /*SCROLL CONTACT*/
-sr.reveal('.contact-content', { interval: 200 }); 
-sr.reveal('.left', { interval: 200 });
-sr.reveal('.right', { interval: 300 });
+sr.reveal('.contact-content', {}); 
 
-sr.reveal('.contact-content', { interval: 200 });
 
-ScrollReveal().reveal('#contact .left', {
-    origin: 'left',
-    delay: 100,
-    duration: 300,
-    reset: true,
-    distance: '150px',
-});
 
-ScrollReveal().reveal('#contact .right', {
-    origin: 'right',
-    delay: 100,
-    duration: 500,
-    reset: true,
-    distance: '150px',
-});
 
 
 // typing text animation script
