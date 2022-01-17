@@ -1019,9 +1019,9 @@ img {
       height: auto;
       object-fit: cover;
       display: block;
-      margin-left: -10px;
+      margin-left: -16px;
       margin-right: auto;
-      margin-bottom: 10em;
+      margin-bottom: 9em;
     }
   }
 
