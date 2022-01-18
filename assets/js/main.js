@@ -105,7 +105,7 @@ themeToggle.addEventListener('click', () => {
 (function () {
         var options = {
             whatsapp: "+2348112785465", // WhatsApp number
-            call_to_action: "Send me a Private message", // Call to action
+            call_to_action: "I'm your best 🔌, Send me a Private message", // Call to action
             position: "left", // Position may be 'right' or 'left'
         };
         var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
