@@ -43,27 +43,92 @@ sr.reveal('.home__img',{});
 sr.reveal('.home__data p',{});
 sr.reveal('.home__social-icon',{}); 
 
-/*SCROLL ABOUT*/
-sr.reveal('.about__img',{}); 
-sr.reveal('.about__subtitle',{}); 
-sr.reveal('.first__text',{}); 
-sr.reveal('.second__text',{});
+ScrollReveal().reveal('.about__img', {
+    origin: 'left',
+    delay: 350,
+    duration: 800,
+    reset: true,
+    distance: '150px',
+});
 
-/*SCROLL SKILLS*/
-sr.reveal('.skills__title',{}); 
-sr.reveal('.stack',{}); 
-sr.reveal('.skills__data',{}); 
-sr.reveal('.skills__img',{});
+ScrollReveal().reveal('.about__subtitle', {
+    origin: 'right',
+    delay: 850,
+    duration: 500,
+    reset: true,
+    distance: '150px',
+});
 
-/*SCROLL PROJECTS*/
+ScrollReveal().reveal('.first__text', {
+    origin: 'right',
+    delay: 880,
+    duration: 500,
+    reset: true,
+    distance: '150px',
+});
+
+ScrollReveal().reveal('.second__text', {
+    origin: 'right',
+    delay: 950,
+    duration: 500,
+    reset: true,
+    distance: '150px',
+});
+
+/* SCROLL SKILLS*/
+ScrollReveal().reveal('.stack', {
+    origin: 'left',
+    delay: 350,
+    duration: 800,
+    reset: true,
+    distance: '150px',
+});
+
+ScrollReveal().reveal('.skills__container .resume__col--2', {
+    origin: 'right',
+    delay: 950,
+    duration: 500,
+    reset: true,
+    distance: '150px',
+});
+
+/* SCROLL PROJECTS*/
 sr.reveal('.projects',{});
 sr.reveal('.projects__image', {}); 
 
-/*SCROLL CONTACT*/
-sr.reveal('.contact-content', {}); 
+/* SCROLL BLOG */
+ScrollReveal().reveal('.subtitle', {
+    origin: 'right',
+    delay: 450,
+    duration: 500,
+    reset: true,
+    distance: '150px',
+});
 
+ScrollReveal().reveal('.blog-content', {
+    origin: 'right',
+    delay: 800,
+    duration: 500,
+    reset: true,
+    distance: '150px',
+});
 
+/* SCROLL CONTACT */
+ScrollReveal().reveal('.left', {
+    origin: 'left',
+    delay: 450,
+    duration: 500,
+    reset: true,
+    distance: '150px',
+});
 
+ScrollReveal().reveal('.right', {
+    origin: 'right',
+    delay: 800,
+    duration: 500,
+    reset: true,
+    distance: '150px',
+});
 
 
 // typing text animation script
