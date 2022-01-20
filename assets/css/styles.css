@@ -525,8 +525,6 @@ img {
   width: 500px;
 }
 
-
-
 .about__subtitle {
   margin-bottom: var(--mb-2);
 }
@@ -552,11 +550,8 @@ img {
 }
 
 @media only screen and (min-width: 240px) and (max-width: 480px)  {
- 
-
-  #skills .button {
-   
-    -ms-transform: translate(-50%, -50%);
+ #skills .button {
+   -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     justify-content: center;
     align-items: center;
@@ -593,7 +588,6 @@ img {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   width: 95%;
   transition: transform .3s ease-out;
-  
 }
 
 .projects__name {
@@ -885,10 +879,7 @@ img {
 }
 
 
-#clock {
-  margin-bottom: 0.8rem;
-  font-size: 1.5rem;
-}
+
 
 /* ===== FOOTER =====*/
 .footer {
@@ -922,6 +913,12 @@ img {
   color: var(--first-color);
   transition: all;
 }
+
+#clock {
+  margin-bottom: 0.8rem;
+  font-size: 1.5rem;
+}
+
 .footer p{
   font-size: 1.0rem;
 }
