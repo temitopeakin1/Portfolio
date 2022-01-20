@@ -885,6 +885,11 @@ img {
 }
 
 
+#clock {
+  margin-bottom: 0.8rem;
+  font-size: 1.5rem;
+}
+
 /* ===== FOOTER =====*/
 .footer {
   background-color: hsl(220, 29%, 10%);
