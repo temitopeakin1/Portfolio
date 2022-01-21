@@ -1116,6 +1116,7 @@ img {
     grid-row-gap: 30px;
     align-content: center;
     justify-content: center;
+    overflow-x: hidden;
   }
 }
   
@@ -1147,6 +1148,7 @@ img {
     @media screen and (max-width: 767px) {
       .about__container {
         margin-top: 1em;
+        overflow: hidden;
       }
       .about {
         margin-top: 4.5em;
@@ -1157,6 +1159,7 @@ img {
       .about__container .about__img img {
         max-width: 100%; /* responsive image */
         height: auto;
+        overflow: hidden;
       }
     }
 

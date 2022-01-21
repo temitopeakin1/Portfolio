@@ -44,7 +44,7 @@ sr.reveal('.home__data p',{});
 sr.reveal('.home__social-icon',{}); 
 
 ScrollReveal().reveal('.about__img', {
-    origin: 'left',
+    origin: 'top',
     delay: 350,
     duration: 800,
     reset: true,
@@ -52,7 +52,7 @@ ScrollReveal().reveal('.about__img', {
 });
 
 ScrollReveal().reveal('.about__subtitle', {
-    origin: 'right',
+    origin: 'top',
     delay: 850,
     duration: 500,
     reset: true,
@@ -60,7 +60,7 @@ ScrollReveal().reveal('.about__subtitle', {
 });
 
 ScrollReveal().reveal('.first__text', {
-    origin: 'right',
+    origin: 'top',
     delay: 880,
     duration: 500,
     reset: true,
@@ -68,7 +68,7 @@ ScrollReveal().reveal('.first__text', {
 });
 
 ScrollReveal().reveal('.second__text', {
-    origin: 'right',
+    origin: 'top',
     delay: 950,
     duration: 500,
     reset: true,
@@ -77,7 +77,7 @@ ScrollReveal().reveal('.second__text', {
 
 /* SCROLL SKILLS*/
 ScrollReveal().reveal('.stack', {
-    origin: 'left',
+    origin: 'top',
     delay: 350,
     duration: 800,
     reset: true,
@@ -85,7 +85,7 @@ ScrollReveal().reveal('.stack', {
 });
 
 ScrollReveal().reveal('.skills__container .resume__col--2', {
-    origin: 'right',
+    origin: 'top',
     delay: 950,
     duration: 500,
     reset: true,
@@ -98,7 +98,7 @@ sr.reveal('.projects__image', {});
 
 /* SCROLL BLOG */
 ScrollReveal().reveal('.subtitle', {
-    origin: 'right',
+    origin: 'top',
     delay: 450,
     duration: 500,
     reset: true,
@@ -106,7 +106,7 @@ ScrollReveal().reveal('.subtitle', {
 });
 
 ScrollReveal().reveal('.blog-content', {
-    origin: 'right',
+    origin: 'top',
     delay: 800,
     duration: 500,
     reset: true,
@@ -115,7 +115,7 @@ ScrollReveal().reveal('.blog-content', {
 
 /* SCROLL CONTACT */
 ScrollReveal().reveal('.left', {
-    origin: 'left',
+    origin: 'top',
     delay: 450,
     duration: 500,
     reset: true,
@@ -123,7 +123,7 @@ ScrollReveal().reveal('.left', {
 });
 
 ScrollReveal().reveal('.right', {
-    origin: 'right',
+    origin: 'top',
     delay: 800,
     duration: 500,
     reset: true,
