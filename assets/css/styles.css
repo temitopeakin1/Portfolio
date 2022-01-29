@@ -151,15 +151,19 @@ a {
 }
 
 img {
-  height: auto;
   display: block;
+  height: auto;
 }
 
 .home__img img {
-  max-width: 300px;
-  border-radius: 20%;
+  max-width: 400px;
+  border-radius: 50%;
   margin-bottom: 4em;
-  margin-left: 30px;
+  margin-left: -20px;
+  padding: 20px;
+  clip-path: circle(50% at 50% 50%);
+  background-color: rgb(182, 147, 134);
+ 
 }
 
 
