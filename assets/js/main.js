@@ -17,6 +17,9 @@ const showMobileNav = (toggleId, navId) =>
 showMobileNav('nav-toggle', 'nav-menu');
 
 
+
+
+
 const navLink = document.querySelectorAll('.nav__link');
 
 function linkAction(){

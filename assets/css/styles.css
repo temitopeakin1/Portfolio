@@ -162,8 +162,7 @@ img {
   margin-left: -20px;
   padding: 20px;
   clip-path: circle(50% at 50% 50%);
-  background-color: rgb(182, 147, 134);
- 
+  background-color: rgb(182, 147, 134); 
 }
 
 
@@ -340,6 +339,7 @@ img {
 .nav__toggle.rotate{
   transform: rotate(-720deg);
 }
+
 
 /*Active menu*/
 
@@ -648,13 +648,11 @@ img {
   padding-right: 20px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   .projects__btn .button {
     position: relative;
     left: 50%;
     right: -50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
   }
 }
 
@@ -1126,8 +1124,7 @@ img {
   
   @media only screen and (max-width: 767px) {
     .skills__container .resume__col--2 {
-      justify-content: center;
-      align-items: center;
+      margin-right: auto;
       margin-left: auto;
     }
     .home__social-icon {
@@ -1136,6 +1133,7 @@ img {
       flex-direction: row;
       padding: 0 0.4rem;
     }
+
   }
 
   @media screen and (max-width: 768px) {
