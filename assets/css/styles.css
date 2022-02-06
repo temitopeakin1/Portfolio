@@ -519,8 +519,6 @@ img {
 
 /* ===== ABOUT =====*/
 
-
-
 .about__container {
   row-gap: 2rem;
   text-align: center;
@@ -543,7 +541,7 @@ img {
 
 /* ===== SKILLS =====*/
 
-  .skills__container {
+.skills__container {
     row-gap: 2rem;
 }
   .stack {
@@ -564,9 +562,6 @@ img {
  
 }
  
-  
-
-
 /* ===== PROJECT =====*/
 
 .projects-section {
@@ -648,11 +643,10 @@ img {
   padding-right: 20px;
 }
 
-@media screen and (min-width: 767px) {
+@media only screen and (min-width: 240px) and (max-width: 480px) {
   .projects__btn .button {
     position: relative;
-    left: 50%;
-    right: -50%;
+    left: 11%;
   }
 }
 
@@ -1171,82 +1165,3 @@ img {
 
 
 
-/* dark mode | light mode
-main {
-  margin-left: 20px;
-  margin-right: 300px
-}
-
-
-main .toggle-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-main .toggle-container label {
-  background-color: var(--text-color);
-  display: inline-block;
-  position: relative;
-  margin: 0 0.5rem;
-  width: 2.875rem;
-  top: 1.5px;
-  height: 1.25rem;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
-main .toggle-container .toggle-ball {
-  height: 0.9375rem;
-  width: 0.9375rem;
-  background-color: var(--first-color-ball);
-  border-radius: 50%;
-  position: absolute;
-  top: 2px;
-  left: 3px;
-  -webkit-transition: -webkit-transform 0.4s ease;
-  transition: -webkit-transform 0.4s ease;
-  transition: transform 0.4s ease;
-  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
-}
-
-main .toggle-container input {
-  position: absolute;
-  left: -9999px;
-}
-
-main .toggle-container input:checked + label .toggle-ball {
-  -webkit-transform: translateX(1.625rem);
-  transform: translateX(1.625rem);
-}
-
-.good {
-  margin-top: 4.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-right: 1rem;
-}
-
-.mode-cover {
-  border-radius: 10rem;
-  width: 8.5rem;
-  height: 100%;
-  background-color: var(--bg-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.dark-mode,
-.light-mode {
-  color: var(--text-color);
-  font-size: 1rem;
-} */
