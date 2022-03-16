@@ -910,9 +910,9 @@ img {
   transition: all;
 }
 
-#clock {
-  margin-bottom: 0.8rem;
-  font-size: 1.5rem;
+#utc {
+  margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
 .footer p{
