@@ -45,27 +45,28 @@ sr.reveal('.home__social-icon',{});
 ScrollReveal().reveal('.about__img', {
     origin: 'top',
     delay: 350,
+    duration: 800,
     reset: true,
     distance: '150px',
 });
 
 ScrollReveal().reveal('.about__subtitle', {
     origin: 'top',
-    delay: 850,
+    delay: 200,
     reset: true,
     distance: '150px',
 });
 
 ScrollReveal().reveal('.first__text', {
     origin: 'top',
-    delay: 880,
+    delay: 200,
     reset: true,
     distance: '150px',
 });
 
 ScrollReveal().reveal('.second__text', {
     origin: 'top',
-    delay: 950,
+    delay: 300,
     reset: true,
     distance: '150px',
 });
@@ -80,26 +81,24 @@ ScrollReveal().reveal('.stack', {
 
 ScrollReveal().reveal('.skills__container .resume__col--2', {
     origin: 'top',
-    delay: 950,
+    delay: 350,
     reset: true,
     distance: '150px',
 });
 
 /* SCROLL PROJECTS*/
-sr.reveal('.projects',{});
-sr.reveal('.projects__image', {}); 
 
 /* SCROLL BLOG */
 ScrollReveal().reveal('.subtitle', {
     origin: 'top',
-    delay: 450,
+    delay: 300,
     reset: true,
     distance: '150px',
 });
 
 ScrollReveal().reveal('.blog-content', {
     origin: 'top',
-    delay: 800,
+    delay: 300,
     reset: true,
     distance: '150px',
 });
@@ -107,14 +106,14 @@ ScrollReveal().reveal('.blog-content', {
 /* SCROLL CONTACT */
 ScrollReveal().reveal('.left', {
     origin: 'top',
-    delay: 450,
+    delay: 350,
     reset: true,
     distance: '150px',
 });
 
 ScrollReveal().reveal('.right', {
     origin: 'top',
-    delay: 800,
+    delay: 400,
     reset: true,
     distance: '150px',
 });
