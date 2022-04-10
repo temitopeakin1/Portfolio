@@ -45,7 +45,6 @@ sr.reveal('.home__social-icon',{});
 ScrollReveal().reveal('.about__img', {
     origin: 'top',
     delay: 350,
-    duration: 800,
     reset: true,
     distance: '150px',
 });
@@ -53,7 +52,6 @@ ScrollReveal().reveal('.about__img', {
 ScrollReveal().reveal('.about__subtitle', {
     origin: 'top',
     delay: 850,
-    duration: 500,
     reset: true,
     distance: '150px',
 });
@@ -61,7 +59,6 @@ ScrollReveal().reveal('.about__subtitle', {
 ScrollReveal().reveal('.first__text', {
     origin: 'top',
     delay: 880,
-    duration: 500,
     reset: true,
     distance: '150px',
 });
@@ -69,7 +66,6 @@ ScrollReveal().reveal('.first__text', {
 ScrollReveal().reveal('.second__text', {
     origin: 'top',
     delay: 950,
-    duration: 500,
     reset: true,
     distance: '150px',
 });
@@ -78,7 +74,6 @@ ScrollReveal().reveal('.second__text', {
 ScrollReveal().reveal('.stack', {
     origin: 'top',
     delay: 350,
-    duration: 800,
     reset: true,
     distance: '150px',
 });
@@ -86,7 +81,6 @@ ScrollReveal().reveal('.stack', {
 ScrollReveal().reveal('.skills__container .resume__col--2', {
     origin: 'top',
     delay: 950,
-    duration: 500,
     reset: true,
     distance: '150px',
 });
@@ -99,7 +93,6 @@ sr.reveal('.projects__image', {});
 ScrollReveal().reveal('.subtitle', {
     origin: 'top',
     delay: 450,
-    duration: 500,
     reset: true,
     distance: '150px',
 });
@@ -107,7 +100,6 @@ ScrollReveal().reveal('.subtitle', {
 ScrollReveal().reveal('.blog-content', {
     origin: 'top',
     delay: 800,
-    duration: 500,
     reset: true,
     distance: '150px',
 });
@@ -116,7 +108,6 @@ ScrollReveal().reveal('.blog-content', {
 ScrollReveal().reveal('.left', {
     origin: 'top',
     delay: 450,
-    duration: 500,
     reset: true,
     distance: '150px',
 });
@@ -124,7 +115,6 @@ ScrollReveal().reveal('.left', {
 ScrollReveal().reveal('.right', {
     origin: 'top',
     delay: 800,
-    duration: 500,
     reset: true,
     distance: '150px',
 });
