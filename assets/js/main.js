@@ -131,22 +131,22 @@ var typed = new Typed(".type", {
 
 const themeToggle = document.getElementById('theme-toggle')
 const darkTheme = 'dark-theme'
-const ligthTheme = 'uil-lightbulb-alt'
+const lightTheme = 'uil-lightbulb-alt'
 // local storage
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
 // current theme and icon
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeToggle.classList.contains(ligthTheme) ? 'uil-moon' : 'uil_sun'
+const getCurrentIcon = () => themeToggle.classList.contains(lightTheme) ? 'uil-moon' : 'uil_sun'
 
 if (selectedTheme) {
     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-    themeToggle.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](ligthTheme)
+    themeToggle.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](lightTheme)
 }
 
 themeToggle.addEventListener('click', () => {
     document.body.classList.toggle(darkTheme)
-    themeToggle.classList.toggle(ligthTheme)
+    themeToggle.classList.toggle(lightTheme)
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 });

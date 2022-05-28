@@ -214,6 +214,12 @@ img {
   top: 2.2rem;
   background-color: var(--first-color);
 }
+.stack .skills__img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
 
 .blog .section-title::after {
   position: absolute;
@@ -402,8 +408,6 @@ img {
   color: var(--text-color);
 }
 
-
-
 .home__data a{
   margin-top: 15px;
 }
@@ -416,9 +420,6 @@ img {
   flex-direction: row;
   margin-top: -50px;
 }
-
-
-
 
 .home__social .scroll-down {
   position: relative;
@@ -608,8 +609,8 @@ img {
 .projects__link {
   color: #4831D4;
   position: relative;
-  font-size: 15px;
-  padding-bottom: 2px;
+  font-size: 13px;
+  top: -10px;
   text-transform: uppercase;
   font-family: "SFUIText-SemiBold", sans-serif;
 }
@@ -634,6 +635,11 @@ img {
 
 .projects__link:hover::after {
   opacity: 1;
+}
+
+.tools {
+  font-size: 13px;
+  margin-top: -8px;
 }
 
 .projects__btn .button {
@@ -743,10 +749,6 @@ img {
    margin-top: 5em;
  }
 }
-
-/* .contact .contact-content {
-  width: calc(50% - 20px);
-} */
 
 .contact .contact-content .text {
   font-size: 20px;
