@@ -37,6 +37,7 @@ const sr = ScrollReveal({
 
 /*SCROLL HOME*/
 sr.reveal('.home__title',{}); 
+sr.reveal('.bttn',{}); 
 sr.reveal('.home__img',{});
 sr.reveal('.home__data p',{});
 sr.reveal('.home__social-icon',{}); 
@@ -48,13 +49,6 @@ ScrollReveal().reveal('.about__img', {
     reset: true,
     distance: '150px',
 });
-
-// ScrollReveal().reveal('.button', {
-//     origin: 'left',
-//     delay: 50,
-//     duration: 500,
-//     distance: '100px',
-// });
 
 ScrollReveal().reveal('.about__subtitle', {
     origin: 'top',
