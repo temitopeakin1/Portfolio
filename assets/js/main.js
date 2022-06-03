@@ -49,12 +49,12 @@ ScrollReveal().reveal('.about__img', {
     distance: '150px',
 });
 
-ScrollReveal().reveal('.button', {
-    origin: 'left',
-    delay: 50,
-    duration: 500,
-    distance: '100px',
-});
+// ScrollReveal().reveal('.button', {
+//     origin: 'left',
+//     delay: 50,
+//     duration: 500,
+//     distance: '100px',
+// });
 
 ScrollReveal().reveal('.about__subtitle', {
     origin: 'top',
