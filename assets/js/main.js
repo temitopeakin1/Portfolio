@@ -89,34 +89,33 @@ ScrollReveal().reveal('.skills__container .resume__col--2', {
 /* SCROLL PROJECTS*/
 
 /* SCROLL BLOG */
-ScrollReveal().reveal('.subtitle', {
-    origin: 'top',
-    delay: 300,
-    reset: true,
-    distance: '150px',
-});
+// ScrollReveal().reveal('.subtitle', {
+//     origin: 'top',
+//     reset: true,
+//     distance: '100px',
+// });
 
-ScrollReveal().reveal('.blog-content', {
-    origin: 'top',
-    delay: 300,
-    reset: true,
-    distance: '150px',
-});
+// ScrollReveal().reveal('.blog-content', {
+//     origin: 'top',
+//     delay: 300,
+//     reset: true,
+//     distance: '150px',
+// });
 
-/* SCROLL CONTACT */
-ScrollReveal().reveal('.left', {
-    origin: 'top',
-    delay: 350,
-    reset: true,
-    distance: '150px',
-});
+// /* SCROLL CONTACT */
+// ScrollReveal().reveal('.left', {
+//     origin: 'top',
+//     delay: 350,
+//     reset: true,
+//     distance: '150px',
+// });
 
-ScrollReveal().reveal('.right', {
-    origin: 'top',
-    delay: 400,
-    reset: true,
-    distance: '150px',
-});
+// ScrollReveal().reveal('.right', {
+//     origin: 'top',
+//     delay: 400,
+//     reset: true,
+//     distance: '150px',
+// });
 
 
 // typing text animation script

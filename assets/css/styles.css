@@ -853,8 +853,6 @@ img {
   padding-top: 10px;
   resize: none;
 }
-
-
 .contact .right form .button {
   height: 40px;
   width: 100%;
@@ -865,6 +863,10 @@ img {
   border-radius: 1.5rem;
   transition: all 0.3s ease;
   border: none;
+}
+
+ .info .sub-title {
+  color: #000000;
 }
 
 .btnScrollToTop {
