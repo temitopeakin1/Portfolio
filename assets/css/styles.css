@@ -898,12 +898,12 @@ img {
 
 
  .info .sub-title {
-  color: #000000;
+  color: var( --text-color);
   font-size: 25px;
 }
 
 .info .sub-title a {
-  color: #000000;
+  color: var( --text-color);
   text-decoration: none;
 }
 
