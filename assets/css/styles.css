@@ -791,16 +791,19 @@ img {
     text-align: start; /* For Edge */
     text-align-last: justify;
 }
-.contact-content .right {
-  display: block;
-  align-content: center;
-  justify-items: center;
-  margin-left: -18px;
-  margin-right: 9px;
-  overflow: hidden;
-}
+  .contact-content .right {
+    display: block;
+    align-content: center;
+    justify-items: center;
+    margin-left: -18px;
+    margin-right: 9px;
+    overflow: hidden;
+  }
   .contact-content .left .sub-title{
     align-items: flex-start;
+  }
+  .contact-content .info .sub-title {
+    font-size: 15px;
   }
 }
   
@@ -819,7 +822,7 @@ img {
 }
 
 .contact .contact-content .row i {
-  font-size: 25px;
+  font-size: 45px;
   color: var(--second-color);
 }
 
@@ -893,8 +896,15 @@ img {
   border: none;
 }
 
+
  .info .sub-title {
   color: #000000;
+  font-size: 25px;
+}
+
+.info .sub-title a {
+  color: #000000;
+  text-decoration: none;
 }
 
 .btnScrollToTop {
