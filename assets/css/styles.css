@@ -485,7 +485,7 @@ img {
 
 /* Begin: Button animation */
 
-.home__data .button i{
+.home__data .bttn i{
   margin-bottom: 5px;
   padding-bottom: -10px;
   margin-left: 10px;
@@ -518,6 +518,7 @@ img {
   background: blue;
 }
 
+
 .bttn {
   display: inline-block;
   background-color: var(--first-color);
@@ -531,7 +532,6 @@ img {
   box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
   background: blue;
 }
-
 /* ===== ABOUT =====*/
 
 .about__container {
