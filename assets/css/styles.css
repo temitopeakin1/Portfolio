@@ -572,9 +572,9 @@ img {
     transform: translate(-50%, -50%);
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 130px;
+    margin-left: 130px;
   }
- 
 }
  
 /* ===== PROJECT =====*/
@@ -829,7 +829,6 @@ img {
 .contact .contact-content .info .sub-title a:hover {
   color: #0000ff;
 }
-
 
 .right .fields {
   display: flex;
