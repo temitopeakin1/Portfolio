@@ -827,27 +827,33 @@ img {
   color: #0000ff;
 }
 
-.contact .right form .fields {
+
+.right .fields {
   display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .contact .right form .field,
 .contact .right form .fields .field {
   height: 45px;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+.contact .right .text {
+  margin-bottom: 1rem;
 }
 .contact .right form .textarea {
   height: 80px;
   width: 100%;
 }
+
 .contact .right form .name {
-  margin-right: 10px;
+  margin-right: 15px;
+  width: 100%;
 }
-.contact .right form .email {
-  margin-left: 10px;
-}
-.contact .right form .field input,
+
 .contact .right form .textarea textarea {
   height: 100%;
   width: 100%;
@@ -857,20 +863,28 @@ img {
   padding: 0 15px;
   font-size: 17px;
   font-family: "Poppins", sans-serif;
-  transition: all 0.3s ease;
 }
+
+.contact .right form .field input,
+.contact .right form .field textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus {
   border-color: #b3b3b3;
 }
-.contact .right form .textarea textarea {
-  padding-top: 10px;
-  resize: none;
-}
 .contact .right form .button {
   height: 40px;
   width: 100%;
-  margin-top: -5px;
+  margin-top: 10px;
   margin-bottom: 30px;
   font-size: 20px;
   cursor: pointer;
@@ -1192,7 +1206,8 @@ img {
 
   
   
-  
+ 
+ 
 
 
 
