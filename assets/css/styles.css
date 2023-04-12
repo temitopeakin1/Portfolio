@@ -10,13 +10,13 @@
   --font-semi: 600;
 }
 
-/*===== COLOR =====*/
+/*===== PRIMARY COLORS =====*/
 :root {
   --first-color: #ff4500;
   --second-color: #0e2431;
 }
 
-/*==== Color*====*/
+/*==== OTHER COLORS & FONTS*====*/
 :root {
   --bg-color: rgb(250, 246, 246);
   --body-font: "Poppins", sans-serif;
@@ -432,6 +432,10 @@ img {
 
 .home__data a{
   margin-top: 15px;
+}
+
+.home__data a:hover {
+  background-color: var(--button-text-color);
 }
 
 .home__title-color {
