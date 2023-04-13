@@ -50,7 +50,8 @@ body.dark-theme {
   --second-color: #ffff;
   --text-color: #fff;
   --second-text-color: white;
-  --button-text-color: white;
+  --button-text-color: hsl(220, 29%, 10%);
+  --button-bg-color: white;
   --shadow-header: 0 0 1px 2px rgba(243, 246, 248, 0.15);
   --shadow-footer: 4px 0 4px 2px rgba(243, 246, 248, 0.15);
   --skills-shadow: 0 4px 15px rgba(255, 255, 255, 0.15);
@@ -60,10 +61,6 @@ body.dark-theme {
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: 0.3s;
-}
-
-#theme-toggle {
-  color: var(--first-color);
 }
 
 .change-theme i {
@@ -76,7 +73,7 @@ body.dark-theme {
 }
 
 .change-theme i:hover {
-  color: black;
+  color: var(--first-color);
   transition: 0.3s;
 }
 
@@ -552,10 +549,6 @@ img {
   border-radius: 1.5rem;
 }
 
-.bttn:hover {
-  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
-  background: blue;
-}
 /* ===== ABOUT =====*/
 
 .about__container {
