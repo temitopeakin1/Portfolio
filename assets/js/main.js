@@ -120,7 +120,7 @@ ScrollReveal().reveal('.skills__container .resume__col--2', {
 
 // typing text animation script
 var typed = new Typed(".type", {
-	strings: ["A FrontEnd Software Engineer", "An IT Systems Engineer","A Mobile App Developer", "An IT Consultant", "A Technical Writer"],
+	strings: ["A FullStack Software Engineer", "An IT Systems Engineer","A Mobile App Developer", "An IT Consultant"],
 	typeSpeed: 100,
 	backSpeed: 60,
 	loop: true

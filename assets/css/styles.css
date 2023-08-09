@@ -1105,13 +1105,10 @@ img {
 
 @media only screen and (min-width: 240px) and (max-width: 480px) {
   .home__img img {
-      width: 120%;
-      height: auto;
+      width: 200%;
       object-fit: cover;
       display: block;
-      margin-left: -16px;
-      margin-right: auto;
-      margin-bottom: 9em;
+      margin-bottom: 20.5rem;
     }
   }
 
