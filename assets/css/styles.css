@@ -1103,12 +1103,12 @@ img {
   }
 }
 
-@media only screen and (min-width: 240px) and (max-width: 480px) {
+@media only screen and (min-width: 240px) and (max-width: 991px) {
   .home__img img {
       width: 200%;
       object-fit: cover;
       display: block;
-      margin-bottom: 20.5rem;
+      margin-bottom: 14rem;
     }
   }
 
