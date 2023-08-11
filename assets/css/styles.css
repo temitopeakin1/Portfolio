@@ -564,7 +564,7 @@ img {
 }
 
 .about__subtitle {
-  margin-bottom: var(--mb-2);
+  font-size: 1em;
 }
 .about__img {
   justify-self: center;
@@ -574,7 +574,7 @@ img {
 .first__text,
 .third__text {
   text-align: justify;
-  padding: 1px;
+  margin-top: .5px;
 }
 
 /* ===== SKILLS =====*/
