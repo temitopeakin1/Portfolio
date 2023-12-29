@@ -424,7 +424,7 @@ img {
 
 .home__data p {
   font-size: 1rem;
-  margin-top: -80px;
+  margin-top: -40px;
   overflow-wrap: normal;
 }
 
@@ -1147,7 +1147,7 @@ img {
 
   @media only screen and (max-width: 767px) {
     .home__data p {
-      margin-top: 5px;
+      margin-top: -5px;
       font-size: 1rem;
     }
   }
