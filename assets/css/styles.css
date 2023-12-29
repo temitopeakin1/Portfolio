@@ -115,8 +115,9 @@ body {
   color: var(--second-color);
 }
 
-body::-webkit-scrollbar {
-  width: 1rem;
+::-webkit-scrollbar {
+  width: .5rem;
+  border-radius: 50px;
 }
 
 body::-webkit-scrollbar-track {
@@ -127,6 +128,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   height: 3.5px;
   background-color: var(--first-color);
+  border-radius: 40px;
 }
 
 body::-webkit-scrollbar-button {
@@ -286,7 +288,7 @@ img {
   align-items: center;
   font-family: 'Irish Grover', cursive;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 @media screen and (max-width: 768px) {
