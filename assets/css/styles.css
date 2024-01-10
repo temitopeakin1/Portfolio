@@ -1121,7 +1121,7 @@ img {
 
   @media only screen and (max-width: 991px) {
    .home__img img {
-    margin-top: 3rem;
+    margin-top: 15px;
    }
 }
 
