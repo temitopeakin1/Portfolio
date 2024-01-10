@@ -1213,11 +1213,11 @@ img {
       
     @media screen and (max-width: 767px) {
       .about__container {
-        margin-top: 1em;
+        margin-top: .5em;
         overflow: hidden;
       }
       .about {
-        margin-top: 4.5em;
+        margin-top: 3em;
       }
     }
 
