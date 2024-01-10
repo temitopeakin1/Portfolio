@@ -1115,16 +1115,9 @@ img {
       width: 200%;
       object-fit: cover;
       display: block;
-      margin-bottom: 8rem;
+      margin-bottom: 13rem;
     }
   }
-
-  @media only screen and (max-width: 991px) {
-   .home__img img {
-    margin-top: 15px;
-   }
-}
-
 
   @media screen and (min-width: 240px) and (max-width: 480px){
     .blog.section-title::after{
