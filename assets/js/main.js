@@ -75,12 +75,12 @@ ScrollReveal().reveal('.stack', {
   distance: '150px',
 })
 
-ScrollReveal().reveal('.skills__container .resume__col--2', {
-  origin: 'top',
-  delay: 350,
-  reset: true,
-  distance: '150px',
-})
+// ScrollReveal().reveal('.skills__container .resume__col--2', {
+//   origin: 'top',
+//   delay: 350,
+//   reset: true,
+//   distance: '150px',
+// })
 
 /* SCROLL PROJECTS*/
 
@@ -116,8 +116,7 @@ ScrollReveal().reveal('.skills__container .resume__col--2', {
 // typing text animation script
 var typed = new Typed('.type', {
   strings: [
-    'A FullStack Software Engineer',
-    'An IT Systems Engineer',
+    'A Software Engineer',
     'A Mobile App Developer',
     'An IT Consultant',
   ],
