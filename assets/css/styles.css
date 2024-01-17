@@ -252,6 +252,7 @@ img {
 
 .l-header {
   width: 100%;
+  /* max-width: 2000px; */
   position: fixed;
   top: 0;
   left: 0;
@@ -266,7 +267,7 @@ img {
 .nav__logo {
   font-size: 30px;
   font-family:'Righteous', sans-serif;
-  padding-top: 10px;
+  margin-top: 20px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -303,10 +304,10 @@ img {
   }
 }
 
-.nav__item {
+/* .nav__item {
   margin-bottom: var(--mb-4);
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 .nav__item:hover {
   color: #0000ff;
@@ -600,7 +601,7 @@ img {
 }
 .about__img {
   justify-self: center;
-  margin-top: -2rem;
+  margin-top: -1.5rem;
 }
 
 .second__text,
