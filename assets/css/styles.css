@@ -264,9 +264,9 @@ img {
 /*===== NAV =====*/
 
 .nav__logo {
-  font-size: 40px;
-  font-family: Arial, Helvetica, sans-serif;
-  padding-top: 20px;
+  font-size: 30px;
+  font-family:'Righteous', sans-serif;
+  padding-top: 10px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1058,6 +1058,8 @@ img {
   .nav__item {
     margin-left: var(--mb-6);
     margin-bottom: 0;
+    font-family:'Righteous', sans-serif;
+    font-size: 1rem;
   }
   .nav__toggle {
     display: none;
