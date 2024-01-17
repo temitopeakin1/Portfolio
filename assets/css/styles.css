@@ -1204,17 +1204,13 @@ img {
   }
   .stack {
     margin-top: 2em;
-    margin-right: 40px;
-    margin-left: 1px;
-  }
-  .stack {
     display: grid;
     grid-template-columns: 50px 50px 50px;
-    grid-column-gap: 45px;
-    grid-row-gap: 30px;
+    grid-column-gap: 60px;
+    grid-row-gap: 37px;
     align-content: center;
     justify-content: center;
-    overflow-x: hidden;
+    overflow-x: hidden; 
   }
 }
 
@@ -1228,6 +1224,10 @@ img {
     display: flex;
     flex-direction: row;
     padding: 0 0.4rem;
+  }
+  .resume__col--2 .button {
+    position: relative;
+    left: 80px;
   }
 }
 
