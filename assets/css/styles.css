@@ -1,7 +1,7 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Righteous&display=swap");
 
 /*===== VARIABLES CSS =====*/
 :root {
@@ -12,7 +12,7 @@
 /*===== PRIMARY COLORS =====*/
 :root {
   --first-color: #ff4500;
-  --second-color: #0e2431;;
+  --second-color: #0e2431;
 }
 
 /*==== OTHER COLORS & FONTS*====*/
@@ -21,7 +21,8 @@
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 2.5rem;
-  --section-font-family: 'Comfortaa', sans-serif;
+  --small-font-size: 1rem;
+  --section-font-family: "Comfortaa", sans-serif;
   --text-color: #0e2431;
   --second-text-color: #fff;
   --button-text-color: #0e2431;
@@ -265,7 +266,7 @@ img {
 
 .nav__logo {
   font-size: 30px;
-  font-family:'Righteous', sans-serif;
+  font-family: "Righteous", sans-serif;
   padding-top: 10px;
 }
 
@@ -453,7 +454,7 @@ img {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
   color: var(--text-color);
-  font-family: var(--body-font)
+  font-family: var(--body-font);
 }
 
 .home__data a {
@@ -627,19 +628,8 @@ img {
 }
 
 .skills__img {
-  width: 100px;
+  width: 75px;
   height: 80px;
-}
-
-@media only screen and (min-width: 240px) and (max-width: 480px) {
-  #skills .button {
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    justify-content: center;
-    align-items: center;
-    margin-top: 130px;
-    margin-left: 130px;
-  }
 }
 
 /* ===== PROJECT =====*/
@@ -673,7 +663,7 @@ img {
   margin: 15px 0 7px;
   font-size: 1.2rem;
   color: var(--first-color);
-  font-family:'Righteous', sans-serif;
+  font-family: "Righteous", sans-serif;
   font-weight: 100;
 }
 
@@ -800,7 +790,7 @@ img {
 }
 
 .contact .text {
-  font-family: 'Comfortaa', sans-serif;
+  font-family: "Comfortaa", sans-serif;
 }
 
 .contact .title::after {
@@ -995,7 +985,7 @@ img {
   background-color: hsl(220, 29%, 10%);
   color: #ffff;
   text-align: center;
-  font-family:'Righteous', sans-serif;
+  font-family: "Righteous", sans-serif;
   padding: 2rem 0;
   margin-top: 50px;
 }
@@ -1032,6 +1022,23 @@ img {
   font-size: 1rem;
 }
 
+/* Animations */
+
+@keyframes showsUp {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+}
+
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 768px) {
   body {
@@ -1041,9 +1048,7 @@ img {
     padding-top: 4rem;
     padding-bottom: 3rem;
   }
-  .section-title {
-    margin-bottom: var(--mb-6);
-  }
+
   .section-title::after {
     width: 80px;
     top: 3rem;
@@ -1059,7 +1064,7 @@ img {
   .nav__item {
     margin-left: var(--mb-6);
     margin-bottom: 0;
-    font-family:'Righteous', sans-serif;
+    font-family: "Righteous", sans-serif;
     font-size: 1rem;
   }
   .nav__toggle {
@@ -1118,43 +1123,20 @@ img {
   }
 }
 
-/* Animations */
-
-@keyframes showsUp {
-  0% {
-    opacity: 0;
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+  #skills .button {
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+    margin-left: 130px;
   }
-
-  50% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateY(-1rem);
-  }
-}
-
-/* Media queries */
-
-@media screen and (min-width: 240px) and (max-width: 480px) {
   .change-theme i {
     font-size: 20px;
     margin-left: 20px;
     padding-bottom: 50px;
   }
-}
-
-@media only screen and (min-width: 240px) and (max-width: 767px) {
-  .home__img img {
-    width: 200%;
-    object-fit: cover;
-    display: block;
-    margin-bottom: 13rem;
-  }
-}
-
-@media screen and (min-width: 240px) and (max-width: 480px) {
   .blog.section-title::after {
     top: 3rem;
   }
@@ -1167,20 +1149,51 @@ img {
   .skills .section-title::after {
     top: 3rem;
   }
+  #skills {
+    margin-top: 2em;
+    overflow-x: hidden;
+  }
+  .contact .right .text {
+    text-align: justify;
+    font-size: 15px;
+  }
+
+  .section-title {
+    font-size: var(--h2-font-size);
+  }
+  .stack {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-column-gap: 60px;
+    grid-row-gap: 37px;
+    align-content: center;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+  .about__container .about__img img {
+    max-width: 100%; /* responsive image */
+    height: auto;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 240px) and (max-width: 767px) {
+  .home__img img {
+    width: 200%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 13rem;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   .home__data {
     margin-top: 100px;
   }
-}
-@media only screen and (max-width: 767px) {
   #home {
     margin-top: 200px;
   }
-}
-
-@media only screen and (max-width: 767px) {
   .home__social a {
     margin-top: 40px;
     font-size: 30px;
@@ -1200,23 +1213,6 @@ img {
   }
 }
 
-@media only screen and (min-width: 240px) and (max-width: 480px) {
-  #skills {
-    margin-top: 2em;
-    overflow-x: hidden;
-  }
-  .stack {
-    margin-top: 2em;
-    display: grid;
-    grid-template-columns: 50px 50px 50px;
-    grid-column-gap: 60px;
-    grid-row-gap: 37px;
-    align-content: center;
-    justify-content: center;
-    overflow-x: hidden; 
-  }
-}
-
 @media only screen and (max-width: 767px) {
   .skills__container .resume__col--2 {
     margin-right: auto;
@@ -1232,18 +1228,6 @@ img {
     position: relative;
     left: 80px;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .home__img {
-    width: 100px;
-    margin-bottom: 12rem;
-    margin-left: -80px;
-    align-content: center;
-  }
-}
-
-@media screen and (max-width: 767px) {
   .about__container {
     margin-top: 0.5em;
     overflow: hidden;
@@ -1253,10 +1237,11 @@ img {
   }
 }
 
-@media only screen and (min-width: 240px) and (max-width: 480px) {
-  .about__container .about__img img {
-    max-width: 100%; /* responsive image */
-    height: auto;
-    overflow: hidden;
+@media screen and (max-width: 768px) {
+  .home__img {
+    width: 100px;
+    margin-bottom: 12rem;
+    margin-left: -80px;
+    align-content: center;
   }
 }
