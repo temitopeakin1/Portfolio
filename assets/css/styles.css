@@ -217,6 +217,38 @@ img {
   filter: grayscale(100%);
 }
 
+/* Tooltip container */
+.stack {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.stack .skills__img:hover::after {
+  content: attr(title);
+  background-color: transparent;
+  color: red;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+
+/* Show the tooltip text when hovering over the container */
+.stack .skills__img:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
 .blog .section-title::after {
   position: absolute;
   content: "";
@@ -735,6 +767,13 @@ img {
   .projects__btn .button {
     position: relative;
     left: 11%;
+  }
+
+  .stack {
+    position: relative;
+    left: auto;
+    right: auto;
+    margin-left: -40px;
   }
 }
 
