@@ -705,6 +705,7 @@ img {
 
 .projects__description {
   margin-bottom: 12px;
+  text-align: justify;
 }
 
 .projects__link {
