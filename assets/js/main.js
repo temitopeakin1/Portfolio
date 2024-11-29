@@ -116,8 +116,7 @@ ScrollReveal().reveal('.stack', {
 // typing text animation script
 var typed = new Typed('.type', {
   strings: [
-    'A Software Engineer',
-    'A Mobile App Developer',
+    'A Senior Software Engineer',
     'An IT Consultant',
   ],
   typeSpeed: 150,
